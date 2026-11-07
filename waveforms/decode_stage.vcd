@@ -1,0 +1,318 @@
+$date
+	Sat Nov  7 14:45:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module decode_stage_tb $end
+$var wire 5 ! rs2 [4:0] $end
+$var wire 5 " rs1 [4:0] $end
+$var wire 1 # reg_write $end
+$var wire 32 $ read_data2 [31:0] $end
+$var wire 32 % read_data1 [31:0] $end
+$var wire 5 & rd [4:0] $end
+$var wire 1 ' mem_write $end
+$var wire 1 ( mem_to_reg $end
+$var wire 1 ) mem_read $end
+$var wire 1 * jump $end
+$var wire 32 + immediate [31:0] $end
+$var wire 2 , imm_type [1:0] $end
+$var wire 7 - funct7 [6:0] $end
+$var wire 3 . funct3 [2:0] $end
+$var wire 1 / branch $end
+$var wire 1 0 alu_src $end
+$var wire 4 1 alu_control [3:0] $end
+$var reg 1 2 clk $end
+$var reg 32 3 instruction [31:0] $end
+$var reg 5 4 rd_wb [4:0] $end
+$var reg 1 5 reg_write_wb $end
+$var reg 32 6 writeback_data [31:0] $end
+$var integer 32 7 failed [31:0] $end
+$var integer 32 8 passed [31:0] $end
+$scope module dut $end
+$var wire 1 2 clk $end
+$var wire 32 9 instruction [31:0] $end
+$var wire 5 : rd_wb [4:0] $end
+$var wire 1 5 reg_write_wb $end
+$var wire 32 ; writeback_data [31:0] $end
+$var wire 5 < rs2 [4:0] $end
+$var wire 5 = rs1 [4:0] $end
+$var wire 1 # reg_write $end
+$var wire 32 > read_data2 [31:0] $end
+$var wire 32 ? read_data1 [31:0] $end
+$var wire 5 @ rd [4:0] $end
+$var wire 1 ' mem_write $end
+$var wire 1 ( mem_to_reg $end
+$var wire 1 ) mem_read $end
+$var wire 1 * jump $end
+$var wire 32 A immediate [31:0] $end
+$var wire 2 B imm_type [1:0] $end
+$var wire 7 C funct7 [6:0] $end
+$var wire 3 D funct3 [2:0] $end
+$var wire 1 / branch $end
+$var wire 1 0 alu_src $end
+$var wire 4 E alu_control [3:0] $end
+$scope module control_unit_instance $end
+$var wire 3 F funct3 [2:0] $end
+$var wire 7 G funct7 [6:0] $end
+$var wire 7 H opcode [6:0] $end
+$var parameter 4 I ALU_ADD $end
+$var parameter 4 J ALU_AND $end
+$var parameter 4 K ALU_OR $end
+$var parameter 4 L ALU_SUB $end
+$var parameter 4 M ALU_XOR $end
+$var parameter 2 N IMM_B $end
+$var parameter 2 O IMM_I $end
+$var parameter 2 P IMM_J $end
+$var parameter 2 Q IMM_S $end
+$var parameter 7 R OP_BRANCH $end
+$var parameter 7 S OP_ITYPE $end
+$var parameter 7 T OP_JAL $end
+$var parameter 7 U OP_LOAD $end
+$var parameter 7 V OP_RTYPE $end
+$var parameter 7 W OP_STORE $end
+$var reg 4 X alu_control [3:0] $end
+$var reg 1 0 alu_src $end
+$var reg 1 / branch $end
+$var reg 2 Y imm_type [1:0] $end
+$var reg 1 * jump $end
+$var reg 1 ) mem_read $end
+$var reg 1 ( mem_to_reg $end
+$var reg 1 ' mem_write $end
+$var reg 1 # reg_write $end
+$upscope $end
+$scope module immediate_unit $end
+$var wire 2 Z imm_type [1:0] $end
+$var wire 32 [ instruction [31:0] $end
+$var parameter 2 \ IMM_B $end
+$var parameter 2 ] IMM_I $end
+$var parameter 2 ^ IMM_J $end
+$var parameter 2 _ IMM_S $end
+$var reg 32 ` immediate [31:0] $end
+$upscope $end
+$scope module register_file_unit $end
+$var wire 1 2 clk $end
+$var wire 5 a read_addr1 [4:0] $end
+$var wire 5 b read_addr2 [4:0] $end
+$var wire 1 5 reg_write $end
+$var wire 5 c write_addr [4:0] $end
+$var wire 32 d write_data [31:0] $end
+$var wire 32 e read_data2 [31:0] $end
+$var wire 32 f read_data1 [31:0] $end
+$var integer 32 g i [31:0] $end
+$upscope $end
+$upscope $end
+$scope task check $end
+$var reg 1 h condition $end
+$var reg 256 i test_name [255:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 _
+b11 ^
+b0 ]
+b10 \
+b100011 W
+b110011 V
+b11 U
+b1101111 T
+b10011 S
+b1100011 R
+b1 Q
+b11 P
+b0 O
+b10 N
+b100 M
+b1 L
+b11 K
+b10 J
+b0 I
+$end
+#0
+$dumpvars
+bx i
+xh
+b100000 g
+b0 f
+b0 e
+b0 d
+b0 c
+b1010 b
+b0 a
+b1010 `
+b101000000000000010010011 [
+b0 Z
+b0 Y
+b0 X
+b10011 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b1010 A
+b1 @
+b0 ?
+b0 >
+b0 =
+b1010 <
+b0 ;
+b0 :
+b101000000000000010010011 9
+b0 8
+b0 7
+b0 6
+05
+b0 4
+b101000000000000010010011 3
+02
+b0 1
+10
+0/
+b0 .
+b0 -
+b0 ,
+b1010 +
+0*
+0)
+0(
+0'
+b1 &
+b0 %
+b0 $
+1#
+b0 "
+b1010 !
+$end
+#1000
+b100000101000100010001000100100100100000011010010110111001110011011101000111001001110101011000110111010001101001011011110110111000100000011100100110010101100111011010010111001101110100011001010111001000100000011001100110100101100101011011000110010001110011 i
+1h
+#2000
+b1000001010001000100010001001001001000000110100101101101011011010110010101100100011010010110000101110100011001010010000001100111011001010110111001100101011100100110000101110100011010010110111101101110 i
+b1 8
+#3000
+b100000101000100010001000100100100100000011000110110111101101110011101000111001001101111011011000010000001110011011010010110011101101110011000010110110001110011 i
+b10 8
+#4000
+b11 8
+#5000
+12
+#10000
+b101010 6
+b101010 ;
+b101010 d
+b101 4
+b101 :
+b101 c
+15
+02
+#15000
+12
+#16000
+b101010 %
+b101010 ?
+b101010 f
+00
+1#
+b101 "
+b101 =
+b101 a
+b0 !
+b0 <
+b0 b
+b110 &
+b110 @
+b110011 H
+b0 +
+b0 A
+b0 `
+b101000001100110011 3
+b101000001100110011 9
+b101000001100110011 [
+05
+#17000
+b1000001010001000100010000100000011010010110111001110011011101000111001001110101011000110111010001101001011011110110111000100000011100100110010101100111011010010111001101110100011001010111001000100000011001100110100101100101011011000110010001110011 i
+#18000
+b110011101101001011100110111010001100101011100100010000001100110011010010110110001100101001000000111001001100101011000010110010001110011001000000110001101101111011100100111001001100101011000110111010000100000011101100110000101101100011101010110010101110011 i
+b100 8
+#19000
+b1010010001011010111010001111001011100000110010100100000011000110110111101101110011101000111001001101111011011000010000001110011011010010110011101101110011000010110110001110011 i
+b101 8
+#20000
+b0 %
+b0 ?
+b0 f
+b10 ,
+b10 B
+b10 Y
+b10 Z
+b1 1
+b1 E
+b1 X
+1/
+0#
+b1 "
+b1 =
+b1 a
+b10 !
+b10 <
+b10 b
+b1000 &
+b1000 @
+b1100011 H
+b1000 +
+b1000 A
+b1000 `
+b1000001000010001100011 3
+b1000001000010001100011 9
+b1000001000010001100011 [
+b110 8
+02
+#21000
+b1000010010001010101000100100000011000110110111101101110011101000111001001101111011011000010000001110011011010010110011101101110011000010110110001110011 i
+#22000
+10
+1(
+1)
+1#
+b0 ,
+b0 B
+b0 Y
+b0 Z
+b0 1
+b0 E
+b0 X
+0/
+b0 "
+b0 =
+b0 a
+b0 !
+b0 <
+b0 b
+b100 &
+b100 @
+b10 .
+b10 D
+b10 F
+b11 H
+b0 +
+b0 A
+b0 `
+b10001000000011 3
+b10001000000011 9
+b10001000000011 [
+b111 8
+#23000
+b10011000101011100100000011000110110111101101110011101000111001001101111011011000010000001110011011010010110011101101110011000010110110001110011 i
+#24000
+b100110001010111001000000110100101101101011011010110010101100100011010010110000101110100011001010010000001100111011001010110111001100101011100100110000101110100011010010110111101101110 i
+b1000 8
+#25000
+b1001 8
+12

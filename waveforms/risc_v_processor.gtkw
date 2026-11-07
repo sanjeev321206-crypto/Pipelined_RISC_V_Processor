@@ -1,0 +1,130 @@
+[*]
+[*] GTKWave Analyzer v3.3.128 (w)1999-2026 BSI
+[*] Sat Nov  7 11:19:34 2026
+[*]
+[dumpfile] "/home/sanjeev/ECE/Apple_Silicon/Pipelined_RISC_V_Processor/waveforms/risc_v_processor.vcd"
+[dumpfile_mtime] "Sat Nov  7 11:12:31 2026"
+[dumpfile_size] 27181
+[savefile] "/home/sanjeev/ECE/Apple_Silicon/Pipelined_RISC_V_Processor/waveforms/risc_v_processor.gtkw"
+[timestart] 0
+[size] 1670 854
+[pos] -27 -24
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] risc_v_processor_tb.
+[sst_width] 332
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 258
+@28
+risc_v_processor_tb.uut.clk
+@22
+risc_v_processor_tb.uut.current_opcode[6:0]
+risc_v_processor_tb.uut.decode_alu_control[3:0]
+@28
+risc_v_processor_tb.uut.decode_alu_src
+risc_v_processor_tb.uut.decode_branch
+risc_v_processor_tb.uut.decode_funct3[2:0]
+@22
+risc_v_processor_tb.uut.decode_funct7[6:0]
+@28
+risc_v_processor_tb.uut.decode_imm_type[1:0]
+@22
+risc_v_processor_tb.uut.decode_immediate[31:0]
+@28
+risc_v_processor_tb.uut.decode_jump
+risc_v_processor_tb.uut.decode_mem_read
+risc_v_processor_tb.uut.decode_mem_to_reg
+risc_v_processor_tb.uut.decode_mem_write
+@22
+risc_v_processor_tb.uut.decode_rd[4:0]
+risc_v_processor_tb.uut.decode_read_data1[31:0]
+risc_v_processor_tb.uut.decode_read_data2[31:0]
+@28
+risc_v_processor_tb.uut.decode_reg_write
+@22
+risc_v_processor_tb.uut.decode_rs1[4:0]
+risc_v_processor_tb.uut.decode_rs2[4:0]
+risc_v_processor_tb.uut.ex_alu_control[3:0]
+risc_v_processor_tb.uut.ex_alu_result[31:0]
+@28
+risc_v_processor_tb.uut.ex_alu_src
+risc_v_processor_tb.uut.ex_branch
+risc_v_processor_tb.uut.ex_branch_taken
+@22
+risc_v_processor_tb.uut.ex_branch_target[31:0]
+@28
+risc_v_processor_tb.uut.ex_funct3[2:0]
+@22
+risc_v_processor_tb.uut.ex_funct7[6:0]
+risc_v_processor_tb.uut.ex_immediate[31:0]
+@28
+risc_v_processor_tb.uut.ex_jump
+@22
+risc_v_processor_tb.uut.ex_jump_target[31:0]
+risc_v_processor_tb.uut.ex_mem_alu_result[31:0]
+risc_v_processor_tb.uut.ex_mem_forward_data[31:0]
+@28
+risc_v_processor_tb.uut.ex_mem_jump
+risc_v_processor_tb.uut.ex_mem_mem_read
+risc_v_processor_tb.uut.ex_mem_mem_to_reg
+risc_v_processor_tb.uut.ex_mem_mem_write
+@22
+risc_v_processor_tb.uut.ex_mem_pc_plus4[31:0]
+risc_v_processor_tb.uut.ex_mem_rd[4:0]
+@28
+risc_v_processor_tb.uut.ex_mem_read
+risc_v_processor_tb.uut.ex_mem_reg_write
+@22
+risc_v_processor_tb.uut.ex_mem_store_data[31:0]
+@28
+risc_v_processor_tb.uut.ex_mem_to_reg
+risc_v_processor_tb.uut.ex_mem_write
+@22
+risc_v_processor_tb.uut.ex_pc[31:0]
+risc_v_processor_tb.uut.ex_pc_plus4[31:0]
+risc_v_processor_tb.uut.ex_rd[4:0]
+risc_v_processor_tb.uut.ex_read_data1[31:0]
+risc_v_processor_tb.uut.ex_read_data2[31:0]
+@28
+risc_v_processor_tb.uut.ex_reg_write
+@22
+risc_v_processor_tb.uut.ex_rs1[4:0]
+risc_v_processor_tb.uut.ex_rs2[4:0]
+risc_v_processor_tb.uut.ex_store_data[31:0]
+risc_v_processor_tb.uut.fetch_instruction[31:0]
+risc_v_processor_tb.uut.fetch_pc[31:0]
+risc_v_processor_tb.uut.fetch_pc_plus4[31:0]
+@28
+risc_v_processor_tb.uut.forward_a[1:0]
+risc_v_processor_tb.uut.forward_b[1:0]
+risc_v_processor_tb.uut.hazard_stall
+risc_v_processor_tb.uut.if_id_uses_rs1
+risc_v_processor_tb.uut.if_id_uses_rs2
+@22
+risc_v_processor_tb.uut.mem_wb_alu_result[31:0]
+risc_v_processor_tb.uut.mem_wb_forward_data[31:0]
+@28
+risc_v_processor_tb.uut.mem_wb_jump
+risc_v_processor_tb.uut.mem_wb_mem_to_reg
+@22
+risc_v_processor_tb.uut.mem_wb_memory_data[31:0]
+risc_v_processor_tb.uut.mem_wb_pc_plus4[31:0]
+risc_v_processor_tb.uut.mem_wb_rd[4:0]
+@28
+risc_v_processor_tb.uut.mem_wb_reg_write
+@22
+risc_v_processor_tb.uut.memory_data[31:0]
+@28
+risc_v_processor_tb.uut.redirect
+@22
+risc_v_processor_tb.uut.redirect_pc[31:0]
+@28
+risc_v_processor_tb.uut.reset
+risc_v_processor_tb.uut.stall
+@22
+risc_v_processor_tb.uut.writeback_data[31:0]
+risc_v_processor_tb.uut.writeback_rd[4:0]
+@28
+risc_v_processor_tb.uut.writeback_reg_write
+[pattern_trace] 1
+[pattern_trace] 0
